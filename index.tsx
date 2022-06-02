@@ -1,20 +1,43 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
-import Inicio from './Pages/Inicio';
+import styles from "./NavBar.module.scss";
+import { useNavigate } from "react-router-dom";
+import logo_pokemon from "../../assets/logo_pokemon.png";
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-    <Inicio/>
-    </BrowserRouter>
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+export default function NavBar() {
+	const navigate = useNavigate();
+	return (
+		<section>
+			<div className={styles.header}>
+				<div className={styles.logo}>
+					<img src={logo_pokemon} alt='Logo Pokemon' />
+				</div>
+        </div>
+				<div className={styles.botao}>
+					<button
+						onClick={() => {
+							navigate("/inicio");
+						}}
+						className={styles.botao__home}
+					>
+						Home
+					</button>
+					<button
+						onClick={() => {
+							navigate("/pokemons");
+						}}
+						className={styles.botao__pokemons}
+					>
+						Pokemons
+					</button>
+					<button
+						onClick={() => {
+							navigate("/contato");
+						}}
+						className={styles.botao__contato}
+					>
+						Contato
+					</button>
+				</div>
+			
+		</section>
+	);
+}
