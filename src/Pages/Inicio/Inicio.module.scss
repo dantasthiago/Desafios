@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.banner {
+	position: absolute;
+	width: 793px;
+	height: 680px;
+	left: 648px;
+	top: 200.44px;
+	bottom: 21.44px;
+}
+.vejaMais {
+	width: 231px;
+	height: 66px;
+	position: absolute;
+	background: #48d0b0;
+	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.18);
+	border-radius: 11px;
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	align-items: center;
+	text-align: center;
+	border-style: none;
+
+	/* Primary/White */
+
+	color: #ffffff;
+}
+.texto {
+	position: absolute;
+	width: 500px;
+	height: 230px;
+	left: 165px;
+	top: 198px;
+
+	&__texto1 {
+		font-family: "Inter", sans-serif;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 54px;
+		line-height: 76px;
+		margin-bottom: 18px;
+
+		color: #282828;
+	}
+
+}
+.subtexto {
+	width: 438px;
+	height: 72px;
+	left: 165px;
+	top: 368px;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 36px;
+	/* or 225% */
+	font-family: "Inter", sans-serif;
+	font-style: normal;
+
+	letter-spacing: 0.02em;
+
+	color: #282828;
+}
+.retangulo {
+  position: absolute;
+  width: 284px;
+  height: 20px;
+  left: 305px;
+  top: 313px;
+  background: #ffda55;
+  mix-blend-mode: multiply;
+}
