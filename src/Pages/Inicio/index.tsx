@@ -1,11 +1,12 @@
 import BannerComplete from "../../assets/BannerComplete.png";
 import styles from "./Inicio.module.scss";
 import NavBar from "../../components/NavBar";
+import { useNavigate } from 'react-router-dom';
 
 export default function Inicio() {
+	const navigate = useNavigate()
 	return (
 		<>
-			<NavBar />
 			<div className={styles.banner}>
 				<img src={BannerComplete} alt='Banner Pokemon' />
 			</div>
@@ -17,7 +18,7 @@ export default function Inicio() {
 					habilidades.
 				</p>
                 
-				<button className={styles.vejaMais}>
+				<button onClick={()=>{ navigate('/pokemons')}} className={styles.vejaMais}>
 					Veja os Pokemons
 				</button>
                 
