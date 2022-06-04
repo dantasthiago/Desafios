@@ -22,6 +22,7 @@ export default function Inicio() {
 				</button>
                 
 			</div>
+			<span className={styles.retangulo}></span>
 		</>
 	);
 }

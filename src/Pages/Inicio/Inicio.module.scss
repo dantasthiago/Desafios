@@ -1,5 +1,11 @@
+@import "/src/styles/variaveis";
+@import "/src/styles/breakpoints";
+
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+
 .banner {
 	position: absolute;
 	width: 793px;
@@ -9,9 +15,9 @@
 	bottom: 21.44px;
 }
 .vejaMais {
+	position: absolute;
 	width: 231px;
 	height: 66px;
-	position: absolute;
 	background: #48d0b0;
 	box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.18);
 	border-radius: 11px;
@@ -63,12 +69,12 @@
 
 	color: #282828;
 }
-.retangulo {
-  position: absolute;
-  width: 284px;
-  height: 20px;
-  left: 305px;
-  top: 313px;
-  background: #ffda55;
-  mix-blend-mode: multiply;
+.retangulo{
+	position: absolute;
+	z-index:-1;
+	left: 305px;
+	top: 366px;	
+	width: 284px;
+	height: 26px;
+	background-color: #FFDA55;
 }

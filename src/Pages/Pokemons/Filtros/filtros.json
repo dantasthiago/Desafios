@@ -1,0 +1,15 @@
+[
+  {
+    "label": "Tipo",
+    "id": 1
+  },
+  {
+    "label": "Ataque",
+    "id": 2
+  },
+  {
+    "label": "Defesa",
+    "id": 3
+  }
+
+]
