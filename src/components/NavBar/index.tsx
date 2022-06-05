@@ -1,43 +1,37 @@
 import styles from "./NavBar.module.scss";
-import { Outlet, useNavigate } from "react-router-dom";
 import logo_pokemon from "../../assets/logo_pokemon.png";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
-	const navigate = useNavigate();
+	const rotas = [
+		{
+			label: "Inicio",
+			to: "/",
+		},
+		{
+			label: "Pokemons",
+			to: "/pokemons",
+		},
+		{
+			label: "Contato",
+			to: "/contato",
+		},
+	];
+
 	return (
-		<section>
-			<div className={styles.header}>
+		<>
+			<div className={styles.menu}>
 				<div className={styles.logo}>
 					<img src={logo_pokemon} alt='Logo Pokemon' />
 				</div>
-			</div>
-			<div className={styles.botao}>
-				<button
-					onClick={() => {
-						navigate("/");
-					}}
-					className={styles.botao__home}
-				>
-					Home
-				</button>
-				<button
-					onClick={() => {
-						navigate("/pokemons");
-					}}
-					className={styles.botao__pokemons}
-				>
-					Pokemons
-				</button>
-				<button
-					onClick={() => {
-						navigate("/contato");
-					}}
-					className={styles.botao__contato}
-				>
-					Contato
-				</button>
-				<Outlet/>
-			</div>
-		</section>
+			<ul className={styles.menu__list}>
+				{rotas.map((rota, index) => (
+					<li key={index} className={styles.menu__link}>
+						<Link to={rota.to}>{rota.label}</Link>
+					</li>
+				))}
+			</ul>
+				</div>
+		</>
 	);
 }

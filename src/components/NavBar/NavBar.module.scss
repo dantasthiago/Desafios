@@ -5,59 +5,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
 
-.header {
-	width: 1440px;
-	height: 93px;
-	background: #ffffff;
-	box-shadow: 0px 4px 16px rgba(1, 28, 64, 0.2);
-}
-.botao {
-	background-color: white;
-	border: 0;
-	outline: 0;
-  
-	&__home {
-		position: absolute;
-		left: 631.99px;
-		top: 23px;
-		font-family: "Open Sans";
-		font-style: normal;
-		font-weight: 700;
-		font-size: 25px;
-		line-height: 34px;
-		/* identical to box height */
+.menu {
+  display: flex;
+    padding: 20px $padding-horizontal;
+    @media (max-width: $desktop_xsm) {
+      padding: 20px $padding-horizontal-mobile;
+    }
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+      padding: 20px $padding-horizontal-sm;
+    }
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+      padding: 20px $padding-horizontal-md;
+    }
+    &__list {
+      align-items: center;
+      display: flex;
+			left: 631.99px;
+			position: absolute
+			
+    }
+    &__link {
+      list-style-type: none;
+      padding: 0 20px;
+      a {
+        color: $dark;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: 600;
+				font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+				display: inline-block;
+				margin: 0;
+				transition: 0.2s;
+				&:after{
+					content: '';
+					display: block;					
+					height: 2px;
+					border-bottom: solid 3px black;
+					transition: transform 250ms ease-in-out;
+					border-radius: 11px;
+					transform: scaleX(0);
 
-		/* Pharagraph */
+				}
+        &:hover:after {
+					width: 100%;
+					transform: scale(1)
+					;
+        }
+      }
+    }
+  }
+ 
 
-		color: #212121;
-	}
-	&__pokemons {
-		position: absolute;
-		left: 810px;
-		top: 23px;
-
-		font-family: "Karla";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 25px;
-		line-height: 29px;
-
-		color: #000000;
-	}
-	&__contato {
-		position: absolute;
-		left: 1035.94px;
-		top: 23px;
-		font-family: "Open Sans";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 25px;
-		line-height: 34px;
-		/* identical to box height */
-
-		color: #000000;
-	}
-}
 .logo {
 	position: absolute;
 	width: 159px;
