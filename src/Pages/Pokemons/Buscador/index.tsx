@@ -11,12 +11,13 @@ export default function Buscador({ busca, setBusca }: Props) {
 	return (
 		<>
 			<div className={styles.buscador}>
-				<input  
+				<input placeholder='Pesquisar pokemon'  
 					value={busca}
 					onChange={(evento) => setBusca(evento.target.value)}
 				/>
-				  <CgSearch size={40} color='#767676'  />
+				
 
+			<CgSearch size={40} color='#767676'  />
 			</div>
 		</>
 	);
