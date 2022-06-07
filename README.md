@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+Olá a todos. Este é meu primeiro projeto e foi desenvolveido utilizando as seguintes tecnologias:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#ReactJs;
 
-## Available Scripts
+#Axios;
 
-In the project directory, you can run:
+#TypeScripts;
 
-### `npm start`
+#Sass;
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#PokeAPI(https://pokeapi.co/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#Instalar dependencias:
 
-### `npm test`
+npm install ou yarn install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#Executar projeto:
 
-### `npm run build`
+npm start  ou yarn start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#Resumo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#Objetivos e dificuldades
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Como meu primeiro projeto, fiquei muito feliz com o resultado. Meu objetivo era criar uma pokedex usando como endpoint a PokeAPI. Todo o projeto foi baseado nas aulas dos cursos para React que realizei, como usar Routes, Axios, Props etc. Como sou novato na área, senti dúvidas quanto minha capacidade de conseguir realizar este projeto, ainda mais que trabalhei com ferramentas que ainda não tinha contato, como FIGMA e GitHub. 
 
-### `npm run eject`
+Criar os componentes foi relativamente fácil, também não tive problemas na hora de integrar cada um deles usando os React-Router Hooks. Já visualmente acabei me enrolando um pouco com sass, é algo que precisarei dar uma revisada. Mas nada se comparou com a integração com a PokeAPI. Primeiro tive dificuldades para buscar dados com Axios, assim como entender os dados que ele oferecia. Foi o que mais me tomou tempo durante o desenvolvimento deste projeto, mas fiquei feliz de conseguir puxar uma lista de pokemons e suas respectivas imagens.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Infelizmente, não consegui finalizar a os componentes busca e filtro a tempo. 
