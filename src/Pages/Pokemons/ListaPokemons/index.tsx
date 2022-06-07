@@ -3,10 +3,6 @@ import styles from "./ListaPokemons.module.scss";
 import Pokemon from "./Pokemon";
 import http from "../../../http";
 
-interface IParametrosBusca {
-  ordering?: string
-  search?: string
-}
 
 export default function ListaPokemons() {
 
@@ -18,7 +14,6 @@ export default function ListaPokemons() {
 			.get(`pokemon/`)
 			.then(resposta => {
 				setPokemons(resposta.data.results)
-        // console.log(resposta.data);
         ;
 			})
 			.catch((erro) => {
@@ -26,7 +21,6 @@ export default function ListaPokemons() {
 			});
 	}, []);
 
-	// console.log(pokemons);
 	
 	return (
 		<section className={styles.lista}>
