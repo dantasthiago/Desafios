@@ -3,6 +3,7 @@ import Ordenador from './Ordenador'
 import Buscador from "./Buscador";
 import styles from "./Pokemons.module.scss";
 import Filtros from './Filtros';
+import ListaPokemons from './ListaPokemons';
 
 export default function Pokemons() {
 	const [busca, setBusca] = useState('');
@@ -14,6 +15,7 @@ export default function Pokemons() {
 			</div>
 			<Buscador busca={busca} setBusca={setBusca} />
 			<Filtros filtro={filtro} setFiltro={setFiltro} />
+			<ListaPokemons/>
 			<Ordenador/>
 		</>
 	);

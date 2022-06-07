@@ -1,0 +1,37 @@
+@import "/src/styles/variaveis";
+@import "/src/styles/breakpoints";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+.card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-family: "Inter";
+	margin: 11px;
+	width: 162px;
+	height: 109.01px;
+	border-radius: 15px;
+	background: linear-gradient(gray, gray, white);
+	&__planta {
+		background: #46d7ab;
+	}
+	&__fogo {
+		background: #fb6c6c;
+	}
+	&__agua {
+		background: linear-gradient(8.46deg, #4676a4 -0.58%, #46c5d7 108.38%);
+	}
+	&__eletrico {
+		background: #ffce4b;
+	}
+	&__normal {
+		background: #fb6c6c;
+	}
+}
+.imagem {
+	width: 79.43px;
+	height: 70.36px;
+	margin-top: 30px;
+}

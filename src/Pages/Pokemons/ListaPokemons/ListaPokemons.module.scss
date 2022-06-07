@@ -1,0 +1,12 @@
+@import "/src/styles/variaveis";
+@import "/src/styles/breakpoints";
+
+.lista{
+  display: flex;
+  flex-wrap: wrap;
+  width:  1088px;
+  height: 330px;
+  margin-top: 50px;
+	margin-left: 206px;
+  
+}
