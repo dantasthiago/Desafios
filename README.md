@@ -26,4 +26,4 @@ Como meu primeiro projeto, fiquei muito feliz com o resultado. Meu objetivo era 
 
 Criar os componentes foi relativamente fácil, também não tive problemas na hora de integrar cada um deles usando os React-Router Hooks. Já visualmente acabei me enrolando um pouco com sass, é algo que precisarei dar uma revisada. Mas nada se comparou com a integração com a PokeAPI. Primeiro tive dificuldades para buscar dados com Axios, assim como entender os dados que ele oferecia. Foi o que mais me tomou tempo durante o desenvolvimento deste projeto, mas fiquei feliz de conseguir puxar uma lista de pokemons e suas respectivas imagens.
 
-Infelizmente, não consegui finalizar a os componentes busca e filtro a tempo. 
+Projeto segue em andamento...
